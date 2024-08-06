@@ -1,0 +1,1 @@
+print("Christmas",["Eve "] * 25 - N)
