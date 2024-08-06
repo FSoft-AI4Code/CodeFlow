@@ -1,7 +1,7 @@
 <div align="center">
 
 # CodeFlow: Predicting Program Behavior with Dynamic Dependencies Learning
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-2305.06156-b31b1b.svg)](https://arxiv.org/abs/2305.06156) -->
+[![arXiv](https://img.shields.io/badge/arXiv-2305.06156-b31b1b.svg)](https://arxiv.org/abs/2305.06156)
 
 </div>
 
@@ -24,7 +24,7 @@ To set up the environment and install the necessary libraries, run the following
 
 CodeFlow consists of several key components:
 1. **CFG Building**: Constructs CFGs from the source code.
-2. **Source Code Representation Learning**: Learns vector representations of CFG nodes using BiLSTM.
+2. **Source Code Representation Learning**: Learns vector representations of CFG nodes.
 3. **Dynamic Dependencies Learning**: Captures dynamic dependencies among statements using execution traces.
 4. **Code Coverage Prediction**: Classifies nodes for code coverage using learned embeddings.
 5. **Runtime Error Detection and Localization**: Detects and localizes runtime errors by analyzing code coverage continuity within CFGs.
