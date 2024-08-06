@@ -1,0 +1,7 @@
+autopep8
+graphviz
+pandas
+torch
+torchtext==0.4.0
+tqdm
+scikit-learn
