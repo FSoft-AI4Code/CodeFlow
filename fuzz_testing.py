@@ -109,7 +109,7 @@ TARGET = data.Field(use_vocab=False, preprocessing=lambda x: x[:100], pad_token=
 fields = [("nodes", NODE), ("forward", EDGE), ("backward", EDGE), ("target", TARGET)]
 
 print('Read data...')
-examples = read_data(f'data/CodeNet_train.csv', fields)
+examples = read_data(f'data/FixEval_complete_train.csv', fields)
 train = data.Dataset(examples, fields)
 NODE.build_vocab(train, max_size=100000)
 
