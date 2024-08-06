@@ -1,5 +1,5 @@
 import argparse
-
+ 
 def parse():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -39,7 +39,6 @@ def parse():
     parser.add_argument("--output", type=str, default="output")
     parser.add_argument("--checkpoint", type=int, default=None)
     parser.add_argument("--dryrun", action="store_true", default=False)
-    parser.add_argument("--alpha", type=float, default=0.5)
     # add config epoch that is a list of epochs
     parser.add_argument(
         "--vis_epoch",
@@ -60,11 +59,14 @@ def parse():
     parser.add_argument("--name_exp", type=str, default=None)
     parser.add_argument("--cuda_num", type=int, default=None)
     parser.add_argument("--seed", type=int, default=300103)
-    parser.add_argument("--beta", type=float, default=0.5)
+    parser.add_argument("--alpha", type=float, default=0.5)
     parser.add_argument("--epoch", type=int, default=None)
     parser.add_argument("--time", type=int, default=60)
     parser.add_argument("--data", type=str, default="CodeNet")
     parser.add_argument("--runtime_detection", action="store_true", default=False)
     parser.add_argument("--bug_localization", action="store_true", default=False)
+    parser.add_argument("--claude_api_key", type=str, default=None)
+    parser.add_argument("--model", type=str, default='claude-3-5-sonnet-20240620')
+    parser.add_argument("--folder_path", type=str, default='fuzz_testing_dataset')
     args = parser.parse_args()
     return args
