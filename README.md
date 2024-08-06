@@ -71,9 +71,9 @@ python main.py --data <dataset> [--runtime_detection] [--bug_localization]
 
 To generate your own dataset, including CFG, forward and backward edges, and the true execution trace as ground truth for your Python code, follow these steps:
 
-1. **Navigate to the `generate_CFG_dataset` folder**:
+1. **Navigate to the `Generate_CFG_dataset` folder**:
     ```sh
-    cd generate_CFG_dataset
+    cd Generate_CFG_dataset
     ```
 
 2. **Place your Python code files in the `dataset` folder**.
@@ -81,4 +81,8 @@ To generate your own dataset, including CFG, forward and backward edges, and the
 3. **Run the dataset generation script**:
     ```sh
     python generate_dataset.py
+    ```
+To build and visualize CFG for a Python file, use this command:
+    ```sh
+    python cfg.py \directory_to_Python_file
     ```
