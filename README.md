@@ -102,3 +102,6 @@ To build and visualize CFG for a Python file, use this command:
 ```sh
 python cfg.py \directory_to_Python_file
 ```
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
