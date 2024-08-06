@@ -5,3 +5,5 @@ torch
 torchtext==0.4.0
 tqdm
 scikit-learn
+astor
+anthropic
