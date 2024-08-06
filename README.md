@@ -39,7 +39,7 @@ To run the CodeFlow model, use the following command:
 python main.py --data <dataset> [--runtime_detection] [--bug_localization]
 ```
 
-### Configuration Options
+#### Configuration Options
 
 - `--data`: Specify the dataset to be used for training. Options:
   - `CodeNet`: Train with only non-buggy Python code from the CodeNet dataset.
@@ -50,7 +50,7 @@ python main.py --data <dataset> [--runtime_detection] [--bug_localization]
 
 - `--bug_localization`: Validate the Bug Localization in buggy code.
 
-### Example Usage
+#### Example Usage
 
 1. **Training with the CodeNet dataset(RQ1):**
     ```sh
@@ -79,7 +79,7 @@ python fuzz_testing.py --checkpoint <number> --epoch <number> --time <seconds> -
 - `time`: Time in seconds to run fuzz testing for each code file.
 - `claude_api_key`: Your API key for Claude.
 - `model`: Model of Claude, default is claude-3-5-sonnet-20240620.
-### Example
+#### Example
 ```sh
 python fuzz_testing.py --checkpoint 1 --epoch 600 --time 120 --claude_api_key YOUR_API_KEY --model claude-3-5-sonnet-20240620
 ```
