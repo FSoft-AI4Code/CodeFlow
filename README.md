@@ -67,6 +67,22 @@ python main.py --data <dataset> [--runtime_detection] [--bug_localization]
     python main.py --data FixEval_complete --bug_localization
     python main.py --data FixEval_incomplete --bug_localization
     ```
+### Fuzz Testing with LLM Integration (RQ4)
+
+After training CodeFlow and saving the corresponding checkpoint, you can utilize it for fuzz testing by integrating it with a Large Language Model (LLM). Use the following command:
+
+```sh
+python fuzz_testing.py --checkpoint <number> --epoch <number> --time <seconds> --claude_api_key <api_key> --model <model_name>
+```
+- `checkpoint`: The chosen checkpoint.
+- `epoch`: The chosen epoch of checkpoint.
+- `time`: Time in seconds to run fuzz testing for each code file.
+- `claude_api_key`: Your API key for Claude.
+- `model`: Model of Claude, default is claude-3-5-sonnet-20240620.
+### Example
+```sh
+python fuzz_testing.py --checkpoint 1 --epoch 600 --time 120 --claude_api_key YOUR_API_KEY --model claude-3-5-sonnet-20240620
+```
 ### Generating Your Own Dataset
 
 To generate your own dataset, including CFG, forward and backward edges, and the true execution trace as ground truth for your Python code, follow these steps:
@@ -83,6 +99,6 @@ To generate your own dataset, including CFG, forward and backward edges, and the
     python generate_dataset.py
     ```
 To build and visualize CFG for a Python file, use this command:
-    ```sh
-    python cfg.py \directory_to_Python_file
-    ```
+```sh
+python cfg.py \directory_to_Python_file
+```
