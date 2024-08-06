@@ -135,6 +135,8 @@ def train(opt, train_iter, valid_iter, device):
     return net
 
 def main():
+    if not os.path.exists('checkpoints'):
+        os.makedirs('checkpoints')
     if opt.checkpoint == None:
         files = os.listdir("checkpoints")
         opt.checkpoint = len(files)+1
