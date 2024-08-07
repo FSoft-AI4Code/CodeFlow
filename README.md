@@ -1,7 +1,7 @@
 <div align="center">
 
 # CodeFlow: Predicting Program Behavior with Dynamic Dependencies Learning
-[![arXiv](https://img.shields.io/badge/arXiv-2408.02816-b31b1b.svg)](https://arxiv.org/pdf/2408.02816)
+[![arXiv](https://img.shields.io/badge/arXiv-2408.02816-b31b1b.svg)](https://arxiv.org/abs/2408.02816)
 
 </div>
 
@@ -9,7 +9,7 @@
 
 We introduce **CodeFlow**, a novel machine learning-based approach designed to predict program behavior by learning both static and dynamic dependencies within the code. CodeFlow constructs control flow graphs (CFGs) to represent all possible execution paths and uses these graphs to predict code coverage and detect runtime errors. Our empirical evaluation demonstrates that CodeFlow significantly improves code coverage prediction accuracy and effectively localizes runtime errors, outperforming state-of-the-art models.
 
-### Paper: [CodeFlow: Predicting Program Behavior with Dynamic Dependencies Learning](https://arxiv.org/pdf/2408.02816)
+### Paper: [CodeFlow: Predicting Program Behavior with Dynamic Dependencies Learning](https://arxiv.org/abs/2408.02816)
 
 ## Installation
 
