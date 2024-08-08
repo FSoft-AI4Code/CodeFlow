@@ -110,6 +110,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 This codebase is adapted from:
 - [ConditionBugs](https://github.com/zhangj111/ConditionBugs)
 - [CFG-Generator](https://github.com/Tiankai-Jiang/CFG-Generator)
+- [trace_python](https://github.com/python/cpython/blob/3.12/Lib/trace.py)
 
 ## Citation Information
 
