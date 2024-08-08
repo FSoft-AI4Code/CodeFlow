@@ -105,3 +105,23 @@ python cfg.py \directory_to_Python_file
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+This codebase is adapted from:
+- [ConditionBugs](https://github.com/zhangj111/ConditionBugs)
+- [CFG-Generator](https://github.com/Tiankai-Jiang/CFG-Generator)
+
+## Citation Information
+
+If you're using CodeFlow, please cite using this BibTeX:
+```bibtex
+@misc{le2024learningpredictprogramexecution,
+      title={Learning to Predict Program Execution by Modeling Dynamic Dependency on Code Graphs}, 
+      author={Cuong Chi Le and Hoang Nhat Phan and Huy Nhat Phan and Tien N. Nguyen and Nghi D. Q. Bui},
+      year={2024},
+      eprint={2408.02816},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2408.02816}, 
+}
+```
