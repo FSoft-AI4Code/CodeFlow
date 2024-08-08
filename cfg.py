@@ -10,12 +10,6 @@ import io
 import linecache
 import random
 
-# TODO later: graph
-'''
-1. add a color dictionary for condition calls
-2. node shape (may be added into class Block)
-'''
-
 class SingletonMeta(type):
     _instance: Optional[BlockId] = None
 
@@ -732,7 +726,6 @@ class CFGVisitor(ast.NodeVisitor):
         self.curr_block = self.add_edge(self.curr_block.bid, self.new_block().bid, node.test)
         self.generic_visit(node)
 
-    # TODO: change all those registers to stacks!
     def visit_Assign(self, node):
         if type(node.value) in [ast.ListComp, ast.SetComp, ast.DictComp, ast.GeneratorExp, ast.Lambda] and len(node.targets) == 1 and type(node.targets[0]) == ast.Name: # is this entire statement necessary?
             if type(node.value) == ast.ListComp:
@@ -941,7 +934,6 @@ class CFGVisitor(ast.NodeVisitor):
         self.add_stmt(self.curr_block, node)
         self.curr_block = self.new_block()
 
-    # ToDO: final blocks to be add
     def visit_Return(self, node):
         if type(node.value) == ast.IfExp:
             self.ifExp = True
