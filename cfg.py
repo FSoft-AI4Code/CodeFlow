@@ -9,7 +9,6 @@ import os
 import io
 import linecache
 import random
-import ipdb
 
 # TODO later: graph
 '''
@@ -1131,7 +1130,6 @@ if __name__ == '__main__':
     parser.formatCode()
     cfg = CFGVisitor().build(filename, ast.parse(parser.script))
     cfg.clean()
-    # ipdb.set_trace()
     cfg.track_execution() 
     cfg.show(filepath)
     
