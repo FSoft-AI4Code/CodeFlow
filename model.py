@@ -159,11 +159,8 @@ class CodeFlow(nn.Module):
         
         # B, max_node, H -> B, max_node
         output = torch.sigmoid(self.fc_output(h_f)) # 
-        # ipdb.set_trace()
         if self.opt.extra_aggregate:
-            # import ipdb; ipdb.set_trace()
             output = torch.bmm(matrix, output)
-        # import ipdb; ipdb.set_trace()
         return output
 
     @staticmethod
