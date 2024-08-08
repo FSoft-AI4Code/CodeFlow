@@ -87,9 +87,9 @@ python fuzz_testing.py --checkpoint 1 --epoch 600 --time 120 --claude_api_key YO
 
 To generate your own dataset, including CFG, forward and backward edges, and the true execution trace as ground truth for your Python code, follow these steps:
 
-1. **Navigate to the `Generate_CFG_dataset` folder**:
+1. **Navigate to the `generate_dataset` folder**:
     ```sh
-    cd Generate_CFG_dataset
+    cd generate_dataset
     ```
 
 2. **Place your Python code files in the `dataset` folder**.
