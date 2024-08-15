@@ -46,7 +46,7 @@ def train(opt, train_iter, valid_iter, device):
             loss.backward()
             optimizer.step()
             total_loss += loss.item()
-            pred = (pred > opt.beta).float()
+            pred = (pred > opt.alpha).float()
             accuracy = accuracy_whole_list(target.cpu().numpy(), pred.cpu().numpy(), x[1].cpu().numpy())
             total_train += target.shape[0]
             total_accuracy += accuracy
@@ -73,7 +73,7 @@ def train(opt, train_iter, valid_iter, device):
             
                 loss = criterion(pred, target)
                 eval_loss += loss.item()
-                pred = (pred > opt.beta).float()
+                pred = (pred > opt.alpha).float()
                 if opt.runtime_detection:
                     for i in range(len(x[1])):
                         total_detect += 1
