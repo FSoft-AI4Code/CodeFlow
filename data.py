@@ -42,7 +42,3 @@ def get_iterators(args, device):
                          sort=False, sort_key=lambda x: len(x.nodes), sort_within_batch=False, repeat=False, shuffle=False)
     print("Done")
     return train_iter, test_iter
-
-opt = config.parse()
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-train_iter, test_iter = get_iterators(opt, device)
